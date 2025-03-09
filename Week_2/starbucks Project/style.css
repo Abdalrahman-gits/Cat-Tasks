@@ -13,8 +13,9 @@
   line-height: 1.4;
 }
 
-body {
+body,html {
   font-family: "Open Sans" , sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -430,9 +431,12 @@ footer {
     justify-content: center;
   }
 }
-.social img {
+.social a {
   max-width: 40px;
   margin-right: 15px;
+}
+.social img {
+  width: 100%;
 }
 .copy {
   display: block;
