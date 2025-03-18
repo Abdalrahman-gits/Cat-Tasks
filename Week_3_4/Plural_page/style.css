@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Generals */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: "Roboto" , "Open Sans";
+  overflow: hidden;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  padding: 10px 85px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  margin: 15px auto;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  border: 1px solid #f0582b;
+  color: #f0582b;
+}
+
+.border-gray {
+  border: 1px solid rgb(255 255 255 / 20%);
+}
+
+/* styling Sections */
+
+.main-page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: rgb(0 0 0 / 96%);
+  padding: 15px 0;
+  color: white;
+}
+
+@media (max-width:991px) {
+  .sign-in {
+    width: 50%;
+  }
+}
+@media (max-width:767px) {
+  .sign-in {
+    width: 100%;
+  }
+}
+
+img {
+  width: 240px;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+form {
+  width: 450px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+input {
+  display: block;
+  background-color: black;
+  color: white;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: #f0582b;
+  font-size: 15px;
+  padding: 12px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition-duration: .3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #f3693f;
+}
+
+section a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.or {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.or::before,
+.or::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: white;
+  width: calc(50% - 20px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.or::before {
+  left: 0px;
+}
+
+.or::after {
+  right: 0px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.links {
+  position: relative;
+}
+
+.links::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer p {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+footer a {
+  color: #f0582b;
+  text-transform: capitalize;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.trial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  color: white;
+  background-color: black;
+  background-image: url(photos/modern-futuristic-sci-fi-background_35913-2150.avif);
+  background-size: cover;
+  z-index: 1;
+}
+
+@media (max-width:991px) {
+  .trial {
+    width: 50%;
+  }
+}
+@media (max-width:767px) {
+  .trial {
+    display: none;
+  }
+}
+
+.trial::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 65%);
+  z-index: -1;
+}
+
+.trial h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.trial button span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
